@@ -25,6 +25,7 @@ PRG-Cosmic-Web/
 ├── README.md
 ├── CITATION.cff
 ├── .nojekyll
+├── 404.html
 ├── voronoi/
 │   ├── SPRC027.html
 │   ├── SPRC056.html

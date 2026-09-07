@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these interactive visualisations, please cite the associated publication and this repository."
+title: "PRG Cosmic Web: Interactive Voronoi and DisPerSE visualisations"
+type: software
+authors:
+  - family-names: "Kompaniiets"
+    given-names: "Olena"
+repository-code: "https://github.com/OlenaKompaniiets/PRG-Cosmic-Web"
+url: "https://OlenaKompaniiets.github.io/PRG-Cosmic-Web/"
+date-released: 2026-09-07
