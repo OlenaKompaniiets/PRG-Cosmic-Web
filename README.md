@@ -1,59 +1,23 @@
-# PRG-Cosmic-Web
+# PRG Cosmic Web
 
-Interactive 3D visualisations of the large-scale environments of seven polar-ring galaxies (PRGs), using two complementary representations:
+[Explore the interactive supplement](https://olenakompaniiets.github.io/PRG-Cosmic-Web/).
 
-- **3D Voronoi reconstruction** of the local galaxy distribution;
-- **DisPerSE filament-skeleton reconstruction** of the cosmic-web environment.
+The site presents interactive 3D Voronoi tessellations and DisPerSE filament reconstructions for seven polar-ring galaxies. The DisPerSE scenes show the fiducial reconstruction within 50 comoving Mpc at a persistence threshold of 3σ.
 
-## Included galaxies
+## Galaxy sample
 
-- SPRC027
-- SPRC056
-- SPRC069
-- SPRC179
-- SPRC260
-- UGC7378
-- UGC7576
-
-IC1689 and SPRC241 are not included in the interactive environment material because their redshifts are below the range adopted for the SDSS-based three-dimensional reconstruction used here.
-
-## Repository structure
-
-```text
-PRG-Cosmic-Web/
-├── index.html
-├── README.md
-├── CITATION.cff
-├── .nojekyll
-├── 404.html
-├── voronoi/
-│   ├── SPRC027.html
-│   ├── SPRC056.html
-│   ├── SPRC069.html
-│   ├── SPRC179.html
-│   ├── SPRC260.html
-│   ├── UGC7378.html
-│   └── UGC7576.html
-└── disperse/
-    ├── SPRC027.html
-    ├── SPRC056.html
-    ├── SPRC069.html
-    ├── SPRC179.html
-    ├── SPRC260.html
-    ├── UGC7378.html
-    └── UGC7576.html
-```
-
-## GitHub Pages
-
-Once GitHub Pages is enabled for the repository root on the `main` branch, the landing page will be available at:
-
-`https://OlenaKompaniiets.github.io/PRG-Cosmic-Web/`
-
-## Usage
-
-Open the landing page and select either **3D Voronoi** or **DisPerSE** for a galaxy. The Plotly visualisations can be rotated, zoomed, and inspected interactively.
+SPRC 027, SPRC 056, SPRC 069, SPRC 179, SPRC 260, UGC 7388, and UGC 7576. IC 1689 and SPRC 241 are below the adopted redshift threshold of \(z \geq 0.02\) for this analysis.
 
 ## Citation
 
-If these visualisations are used in scientific work, please cite the associated publication and this repository.
+If you use the results or visualisations, please cite the manuscript.
+
+Kompaniiets, O. V., Pastoven, O. S., Dobrycheva, D. V., Hetmantsev, O. O., Vavilova, I. B., Izviekova, I. O., & Vasylenko, M. Yu. (2026). *Can integrated photometry and large-scale environment constrain the formation of polar rings in galaxies?* Submitted to *Astronomy & Astrophysics*.
+
+## Repository layout
+
+- `index.html` is the sample index. `viewer.html` provides a common viewer with controls for selecting a galaxy and reconstruction method.
+- The `voronoi/` and `disperse/` folders hold the standalone Plotly visualisations.
+- `assets/` contains the site styles, viewer scripts, and the cover projection derived from the SPRC 260 DisPerSE scene.
+
+To preview the site locally, run `python -m http.server` from the repository root. The DisPerSE scenes load Plotly from its CDN.

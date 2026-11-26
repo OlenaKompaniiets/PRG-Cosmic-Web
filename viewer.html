@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>3D explorer — PRG Cosmic Web</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/targets.js" defer></script>
+  <script src="assets/viewer.js" defer></script>
+</head>
+<body>
+  <header class="site-header dark">
+    <div class="topbar container">
+      <a class="brand" href="./"><span class="brand-mark" aria-hidden="true"></span>PRG Cosmic Web</a>
+      <nav aria-label="Main navigation"><a href="./#sample">All galaxies</a><a href="./#citation">Cite</a></nav>
+    </div>
+  </header>
+  <main class="viewer container">
+    <div class="viewer-heading">
+      <h1 id="target-title">3D explorer</h1>
+      <div class="viewer-controls" hidden>
+        <label for="target">Galaxy
+          <select id="target"></select>
+        </label>
+        <label for="method">Method
+          <select id="method">
+            <option value="voronoi">3D Voronoi</option>
+            <option value="disperse">DisPerSE</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <p class="viewer-help" hidden>Drag to rotate, scroll or pinch to zoom, and hover for details. Use the plot toolbar to reset the camera or save a snapshot.</p>
+    <div class="viewport" hidden>
+      <p class="plot-status" id="plot-status" role="status"></p>
+      <iframe id="scene" title="Interactive 3D reconstruction"></iframe>
+    </div>
+    <div class="viewer-tools" hidden><a id="direct-plot" target="_blank" rel="noopener">Open standalone plot</a></div>
+    <noscript><p><a href="./#sample">Browse the standalone visualisations by galaxy.</a></p></noscript>
+  </main>
+</body>
+</html>

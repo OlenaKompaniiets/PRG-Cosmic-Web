@@ -1,10 +1,31 @@
 cff-version: 1.2.0
-message: "If you use these interactive visualisations, please cite the associated publication and this repository."
+message: "If you use the results or visualisations, please cite the preferred citation, a manuscript submitted to Astronomy & Astrophysics."
 title: "PRG Cosmic Web: Interactive Voronoi and DisPerSE visualisations"
 type: software
 authors:
   - family-names: "Kompaniiets"
     given-names: "Olena"
 repository-code: "https://github.com/OlenaKompaniiets/PRG-Cosmic-Web"
-url: "https://OlenaKompaniiets.github.io/PRG-Cosmic-Web/"
-date-released: 2026-09-07
+url: "https://olenakompaniiets.github.io/PRG-Cosmic-Web/"
+date-released: "2026-09-07"
+preferred-citation:
+  type: article
+  title: "Can integrated photometry and large-scale environment constrain the formation of polar rings in galaxies?"
+  authors:
+    - family-names: "Kompaniiets"
+      given-names: "O. V."
+    - family-names: "Pastoven"
+      given-names: "O. S."
+    - family-names: "Dobrycheva"
+      given-names: "D. V."
+    - family-names: "Hetmantsev"
+      given-names: "O. O."
+    - family-names: "Vavilova"
+      given-names: "I. B."
+    - family-names: "Izviekova"
+      given-names: "I. O."
+    - family-names: "Vasylenko"
+      given-names: "M. Yu."
+  year: 2026
+  journal: "Astronomy & Astrophysics"
+  status: submitted
